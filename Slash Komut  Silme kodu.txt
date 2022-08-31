@@ -1,0 +1,2 @@
+client.api.applications('584513444066099210').commands("884594020989403136").delete(); 
+console.log(`Sildimm`)

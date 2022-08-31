@@ -1,0 +1,21 @@
+
+const { MessageEmbed } = require('discord.js')
+module.exports = {
+    name: "help", // Komut Adı
+    description: "Shows the bot's commands", // Komut Açıklaması
+    type: 'CHAT_INPUT',
+    run: async (client, interaction) => {
+   const mirai = new MessageEmbed()
+   .setColor("black")
+   .setFooter({text: client.user.username})
+   .setAuthor({name: `${client.user.username} - Help`})
+   .setDescription(`
+   > \`\` Hello ${client.user.username} users, thank you for using and choosing our bot. The necessary information is below.`)
+.addField("➜ Komut adı", "komut açıklaması")
+.addField("➜ Komut adı", "komut açıklaması")
+.addField("➜ Komut adı", "komut açıklaması")
+.addField("➜ Komut adı", "komut açıklaması")
+.addField("➜ Komut adı", "komut açıklaması")
+   interaction.reply({embeds: [mirai]})
+    },
+  };
